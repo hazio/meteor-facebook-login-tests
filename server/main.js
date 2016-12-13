@@ -9,7 +9,7 @@ Meteor.startup(() => {
 
     ServiceConfiguration.configurations.insert({
         service: 'facebook',
-        appId: '',
-        secret: ''
+        appId: process.env.FACEBOOK_APPID,
+        secret: process.env.FACEBOOK_SECRET
     });
 });
